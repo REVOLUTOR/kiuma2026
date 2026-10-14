@@ -34,9 +34,9 @@ h2{font-size:22px;font-weight:900;margin:28px 0 12px}
 h2:first-child{margin-top:0}
 .note{font-size:14px;color:var(--muted);margin:-6px 0 12px}
 .tl{list-style:none;margin:0;padding:0;border-left:3px solid var(--gold);margin-left:8px}
-.tl li{position:relative;padding:0 0 16px 20px}
-.tl li::before{content:"";position:absolute;left:-9px;top:4px;width:15px;height:15px;border-radius:50%;background:var(--card);border:3px solid var(--navy2)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tl li::before{border-color:var(--gold)}}
+.tl>li{position:relative;padding:0 0 16px 20px}
+.tl>li::before{content:"";position:absolute;left:-9px;top:4px;width:15px;height:15px;border-radius:50%;background:var(--card);border:3px solid var(--navy2)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tl>li::before{border-color:var(--gold)}}
 .t{font-weight:900;font-size:15px;color:var(--navy2)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .t{color:#8FB8F0}}
 :root[data-theme="dark"] .t{color:#8FB8F0}
@@ -81,10 +81,11 @@ footer{text-align:center;font-size:13px;color:var(--muted);padding:0 20px 30px}
 <li><div class="t">Saa 7:00 Mchana</div><div class="d">Sala ya ufunguzi.</div></li>
 <li><div class="t">Baada ya Sala ya Ufunguzi</div><div class="d">Utambulisho wa viongozi wa Serikali, viongozi wa usalama wakiongozwa na RPC, Mheshimiwa Diwani, viongozi wa dini, wageni waalikwa na viongozi wa KIUMA.</div></li>
 <li><div class="t">Baada ya Utambulisho</div><div class="d">Kusomwa kwa risala na taarifa ya maendeleo ya KIUMA tangu kuanzishwa kwake.</div></li>
-<li><div class="t">Baada ya Risala</div><div class="d">Neno kutoka kwa viongozi na Wanakiuma.</div></li>
+<li><div class="t">Baada ya Risala</div><div class="d">Neno kutoka kwa viongozi na Wanakiuma:<ol style="margin:6px 0 0;padding-left:22px"><li style="padding:0 0 2px">Peter Bujiku</li><li style="padding:0 0 2px">Mwanaisha Jumaa</li><li style="padding:0 0 2px">Nicolaus Mpandula</li><li style="padding:0 0 2px">Willson Makubi</li><li style="padding:0 0 2px">Mheshimiwa Diwani</li><li style="padding:0 0 2px">Mwenyekiti</li></ol></div></li>
 <li><div class="t">Baada ya Neno la Viongozi <span class="free" style="font-size:11px">MGENI RASMI</span></div><div class="d">Hotuba ya Mgeni Rasmi, Mheshimiwa Petro Magoti, Mkuu wa Wilaya ya Kisarawe.</div></li>
 <li><div class="t">Baada ya Hotuba ya Mgeni Rasmi</div><div class="d">Neno la shukrani kwa Mgeni Rasmi, viongozi, wadau na washiriki wote.</div></li>
 <li><div class="t">Mwisho wa Hafla</div><div class="d">Picha ya pamoja na kufungwa kwa shughuli za sherehe.</div></li>
+<li><div class="t">Saa 8:00 Mchana <span class="free" style="font-size:11px">CHAKULA</span></div><div class="d">Chakula.</div></li>
 </ol>
 <h2>Mgeni Rasmi</h2>
 <div class="card"><strong>Mhe. Petro Magoti</strong><p>Mkuu wa Wilaya ya Kisarawe</p></div>
